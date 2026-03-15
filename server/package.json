@@ -1,0 +1,11 @@
+{
+    "name": "themis-bridge-server",
+    "type": "module",
+    "scripts": {
+        "start": "node index.js",
+        "dev": "node --watch index.js"
+    },
+    "dependencies": {
+        "ws": "^8.19.0"
+    }
+}
