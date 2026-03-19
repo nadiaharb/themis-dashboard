@@ -27,7 +27,7 @@ The key design decision is that the React frontend has no idea whether it's talk
 
 ## Running locally
 
-You need Node.js 18+ and two terminals.
+Node.js 18+ and two terminals.
 
 **Terminal 1 — bridge server:**
 ```bash
@@ -56,12 +56,4 @@ The simulator speaks the rosbridge v2 protocol identically to `rosbridge_suite`.
    echo "VITE_WS_URL=ws://<robot-ip>:9090" > client/.env.local
    ```
 
-No other changes needed.
 
-## What's next
-
-- Replace simulated IMU with live `/themis/imu/data_raw` from a real unit
-- Add `/themis/lidar/points` visualisation using Three.js
-- Implement `cmd_vel` publishing so the dashboard can send drive commands
-- Add message schema definitions in C++ matching `themis_msgs/*`
-- Explore Rust for the bridge server for lower latency on embedded hardware
